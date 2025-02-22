@@ -3,7 +3,7 @@ Clase 25 - Arrays
 Vídeo: https://youtu.be/1glVfFxj8a4?t=8741
 */
 
-// Array
+// Array, es una colección de valores, que pueden ser de cualquier tipo
 
 // Declaración
 
@@ -52,9 +52,9 @@ console.log(myArray)
 
 myArray = []
 
-// push y pop
+// push y pop, añadir y eliminar elementos al final
 
-myArray.push("Brais")
+myArray.push("Brais") // Añade hacia la derecha o al final
 myArray.push("Moure")
 myArray.push("mouredev")
 myArray.push(37)
@@ -62,43 +62,43 @@ myArray.push(37)
 console.log(myArray)
 
 console.log(myArray.pop()) // Elimina el último y lo devuelve
-myArray.pop()
+myArray.pop() // Elimina el último
 
 console.log(myArray)
 
-// shift y unshift
+// shift y unshift, añadir y eliminar elementos al principio
 
-console.log(myArray.shift())
+console.log(myArray.shift()) // Elimina el primero y lo devuelve
 console.log(myArray)
 
-myArray.unshift("Brais", "mouredev")
+myArray.unshift("Brais", "mouredev") // Añade hacia la izquierda o al principio
 console.log(myArray)
 
-// length
+// length, tamaño del array
 
 console.log(myArray.length)
 
-// clear
+// clear, vaciar un array
 
 myArray = []
 myArray.length = 0 // alternativa
 console.log(myArray)
 
-// slice
+// slice, coger un pedazo
 
 myArray = ["Brais", "Moure", "mouredev", 37, true]
 
-let myNewArray = myArray.slice(1, 3)
+let myNewArray = myArray.slice(1, 3) //Coges un pedazo, pero sin tener en cuenta al ultimo elemento 
 
 console.log(myArray)
 console.log(myNewArray)
 
-// splice
+// splice, eliminar un pedazo 
 
-myArray.splice(1, 3)
+myArray.splice(1, 3) // Elimina un pedazo, en este caso desde la posición 1, y 3 elementos
 console.log(myArray)
 
 myArray = ["Brais", "Moure", "mouredev", 37, true]
 
-myArray.splice(1, 2, "Nueva entrada")
+myArray.splice(1, 2, "Nueva entrada")  // Elimina un pedazo, y lo reemplaza por otro, en este caso "Nueva entrada"
 console.log(myArray)

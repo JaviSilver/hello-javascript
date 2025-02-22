@@ -3,7 +3,7 @@ Clase 26 - Sets
 Vídeo: https://youtu.be/1glVfFxj8a4?t=9952
 */
 
-// Set
+// Set, es una colección de valores únicos, es decir, no admite duplicados
 
 // Declaración
 
@@ -21,27 +21,27 @@ console.log(mySet)
 
 // add y delete
 
-mySet.add("https://moure.dev")
+mySet.add("https://moure.dev") // Añadir un elemento
 
 console.log(mySet)
 
-mySet.delete("https://moure.dev")
+mySet.delete("https://moure.dev") // Eliminar un elemento, citando el valor exacto
 
 console.log(mySet)
 
-console.log(mySet.delete("Brais"))
+console.log(mySet.delete("Brais")) // Devuelve true si lo ha eliminado, false si no lo ha eliminado
 console.log(mySet.delete(4))
 
 console.log(mySet)
 
 // has
 
-console.log(mySet.has("Moure"))
+console.log(mySet.has("Moure")) // Devuelve true si existe, false si no existe
 console.log(mySet.has("Brais"))
 
 // size
 
-console.log(mySet.size)
+console.log(mySet.size) // Devuelve el número de elementos
 
 // Convertir un set a array
 let myArray = Array.from(mySet)

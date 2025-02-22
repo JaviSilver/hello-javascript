@@ -67,6 +67,15 @@ for (let value of myString) {
     console.log(value)
 }
 
+// for in
+let persona={
+    nombre: "Brais",
+    edad: 27,
+    ciudad: "A Coruña"
+}
+for(let propiedad in persona){
+    console.log(propiedad	+ ": " + persona[propiedad])
+}
 // break y continue
 
 for (let i = 0; i < 10; i++) {

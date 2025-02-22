@@ -93,5 +93,4 @@ function funcB() {
 funcA()
 
 // clear
-
 // console.clear()
